@@ -39,6 +39,7 @@
             this.WeightTextBox = new System.Windows.Forms.TextBox();
             this.BMICalculatorButton = new System.Windows.Forms.Button();
             this.BMITextBox = new System.Windows.Forms.TextBox();
+            this.ResultTextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // WelcomeLabel
@@ -130,23 +131,35 @@
             // 
             this.BMICalculatorButton.Location = new System.Drawing.Point(16, 353);
             this.BMICalculatorButton.Name = "BMICalculatorButton";
-            this.BMICalculatorButton.Size = new System.Drawing.Size(227, 38);
+            this.BMICalculatorButton.Size = new System.Drawing.Size(167, 38);
             this.BMICalculatorButton.TabIndex = 9;
             this.BMICalculatorButton.Text = "Calculate BMI";
             this.BMICalculatorButton.UseVisualStyleBackColor = true;
+            this.BMICalculatorButton.Click += new System.EventHandler(this.BMICalculatorButton_Click);
             // 
             // BMITextBox
             // 
+            this.BMITextBox.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.BMITextBox.ForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.BMITextBox.Location = new System.Drawing.Point(12, 397);
             this.BMITextBox.Name = "BMITextBox";
-            this.BMITextBox.Size = new System.Drawing.Size(280, 32);
+            this.BMITextBox.ReadOnly = true;
+            this.BMITextBox.Size = new System.Drawing.Size(78, 32);
             this.BMITextBox.TabIndex = 10;
+            // 
+            // ResultTextBox
+            // 
+            this.ResultTextBox.Location = new System.Drawing.Point(108, 397);
+            this.ResultTextBox.Name = "ResultTextBox";
+            this.ResultTextBox.Size = new System.Drawing.Size(184, 32);
+            this.ResultTextBox.TabIndex = 11;
             // 
             // BMICalculatorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(304, 441);
+            this.Controls.Add(this.ResultTextBox);
             this.Controls.Add(this.BMITextBox);
             this.Controls.Add(this.BMICalculatorButton);
             this.Controls.Add(this.WeightTextBox);
@@ -183,6 +196,7 @@
         public System.Windows.Forms.TextBox WeightTextBox;
         private System.Windows.Forms.Button BMICalculatorButton;
         public System.Windows.Forms.TextBox BMITextBox;
+        private System.Windows.Forms.TextBox ResultTextBox;
     }
 }
 
