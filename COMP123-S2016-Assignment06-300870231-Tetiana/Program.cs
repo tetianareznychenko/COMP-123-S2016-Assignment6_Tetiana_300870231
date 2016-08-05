@@ -16,7 +16,7 @@ namespace COMP123_S2016_Assignment06_300870231_Tetiana
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new BMICalculatorForm());
         }
     }
 }

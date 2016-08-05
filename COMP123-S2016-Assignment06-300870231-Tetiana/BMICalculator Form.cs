@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace COMP123_S2016_Assignment06_300870231_Tetiana
 {
-    public partial class Form1 : Form
+    public partial class BMICalculatorForm : Form
     {
-        public Form1()
+        public BMICalculatorForm()
         {
             InitializeComponent();
         }
