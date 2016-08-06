@@ -38,7 +38,6 @@
             this.KilogramsRadioButton = new System.Windows.Forms.RadioButton();
             this.WeightTextBox = new System.Windows.Forms.TextBox();
             this.BMICalculatorButton = new System.Windows.Forms.Button();
-            this.BMITextBox = new System.Windows.Forms.TextBox();
             this.ResultTextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
@@ -67,19 +66,17 @@
             this.InchesRadioButton.Name = "InchesRadioButton";
             this.InchesRadioButton.Size = new System.Drawing.Size(93, 28);
             this.InchesRadioButton.TabIndex = 2;
-            this.InchesRadioButton.TabStop = true;
             this.InchesRadioButton.Text = "inches";
             this.InchesRadioButton.UseVisualStyleBackColor = true;
             // 
             // MetresRadioButton
             // 
             this.MetresRadioButton.AutoSize = true;
-            this.MetresRadioButton.Location = new System.Drawing.Point(133, 123);
+            this.MetresRadioButton.Location = new System.Drawing.Point(141, 123);
             this.MetresRadioButton.Name = "MetresRadioButton";
-            this.MetresRadioButton.Size = new System.Drawing.Size(100, 28);
+            this.MetresRadioButton.Size = new System.Drawing.Size(151, 28);
             this.MetresRadioButton.TabIndex = 3;
-            this.MetresRadioButton.TabStop = true;
-            this.MetresRadioButton.Text = "metres";
+            this.MetresRadioButton.Text = "centimeters";
             this.MetresRadioButton.UseVisualStyleBackColor = true;
             // 
             // HeightTextBox
@@ -105,18 +102,16 @@
             this.PoundsRadioButton.Name = "PoundsRadioButton";
             this.PoundsRadioButton.Size = new System.Drawing.Size(103, 28);
             this.PoundsRadioButton.TabIndex = 6;
-            this.PoundsRadioButton.TabStop = true;
             this.PoundsRadioButton.Text = "pounds";
             this.PoundsRadioButton.UseVisualStyleBackColor = true;
             // 
             // KilogramsRadioButton
             // 
             this.KilogramsRadioButton.AutoSize = true;
-            this.KilogramsRadioButton.Location = new System.Drawing.Point(133, 258);
+            this.KilogramsRadioButton.Location = new System.Drawing.Point(152, 258);
             this.KilogramsRadioButton.Name = "KilogramsRadioButton";
             this.KilogramsRadioButton.Size = new System.Drawing.Size(129, 28);
             this.KilogramsRadioButton.TabIndex = 7;
-            this.KilogramsRadioButton.TabStop = true;
             this.KilogramsRadioButton.Text = "kilograms";
             this.KilogramsRadioButton.UseVisualStyleBackColor = true;
             // 
@@ -137,21 +132,11 @@
             this.BMICalculatorButton.UseVisualStyleBackColor = true;
             this.BMICalculatorButton.Click += new System.EventHandler(this.BMICalculatorButton_Click);
             // 
-            // BMITextBox
-            // 
-            this.BMITextBox.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.BMITextBox.ForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.BMITextBox.Location = new System.Drawing.Point(12, 397);
-            this.BMITextBox.Name = "BMITextBox";
-            this.BMITextBox.ReadOnly = true;
-            this.BMITextBox.Size = new System.Drawing.Size(78, 32);
-            this.BMITextBox.TabIndex = 10;
-            // 
             // ResultTextBox
             // 
-            this.ResultTextBox.Location = new System.Drawing.Point(108, 397);
+            this.ResultTextBox.Location = new System.Drawing.Point(16, 397);
             this.ResultTextBox.Name = "ResultTextBox";
-            this.ResultTextBox.Size = new System.Drawing.Size(184, 32);
+            this.ResultTextBox.Size = new System.Drawing.Size(276, 32);
             this.ResultTextBox.TabIndex = 11;
             // 
             // BMICalculatorForm
@@ -159,15 +144,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(304, 441);
+            this.Controls.Add(this.KilogramsRadioButton);
+            this.Controls.Add(this.MetresRadioButton);
             this.Controls.Add(this.ResultTextBox);
-            this.Controls.Add(this.BMITextBox);
             this.Controls.Add(this.BMICalculatorButton);
             this.Controls.Add(this.WeightTextBox);
-            this.Controls.Add(this.KilogramsRadioButton);
             this.Controls.Add(this.PoundsRadioButton);
             this.Controls.Add(this.WeightLabel);
             this.Controls.Add(this.HeightTextBox);
-            this.Controls.Add(this.MetresRadioButton);
             this.Controls.Add(this.InchesRadioButton);
             this.Controls.Add(this.HeightLabel);
             this.Controls.Add(this.WelcomeLabel);
@@ -195,7 +179,6 @@
         private System.Windows.Forms.RadioButton KilogramsRadioButton;
         public System.Windows.Forms.TextBox WeightTextBox;
         private System.Windows.Forms.Button BMICalculatorButton;
-        public System.Windows.Forms.TextBox BMITextBox;
         private System.Windows.Forms.TextBox ResultTextBox;
     }
 }
